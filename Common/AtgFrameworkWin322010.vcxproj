@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{AFB1BA2F-4069-4856-ACED-9970622BD4AF}</ProjectGuid>
+    <RootNamespace>AtgFrameworkWin32</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)_$(Platform)_2010\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)_$(Platform)_2010\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)_$(Platform)_2010\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)_$(Platform)_2010\</IntDir>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(XEDK)\include;$(XEDK)\include\win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;_PC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderOutputFile>$(Configuration)_$(Platform)_2010/$(TargetName).pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>$(Configuration)_$(Platform)_2010/</ObjectFileName>
+      <ProgramDataBaseFileName>$(Configuration)_$(Platform)_2010/vc70.pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)AtgFrameworkWin32.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(XEDK)\include;$(XEDK)\include\win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;_PC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderOutputFile>$(Configuration)_$(Platform)_2010/$(TargetName).pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>$(Configuration)_$(Platform)_2010/</ObjectFileName>
+      <ProgramDataBaseFileName>$(Configuration)_$(Platform)_2010/vc70.pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)AtgFrameworkWin32.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="AtgAnimation.cpp" />
+    <ClCompile Include="AtgApp.cpp" />
+    <ClCompile Include="AtgBound.cpp" />
+    <ClCompile Include="AtgCamera.cpp" />
+    <ClCompile Include="AtgCollision.cpp" />
+    <ClCompile Include="AtgDebugDraw.cpp" />
+    <ClCompile Include="AtgDevice.cpp" />
+    <ClCompile Include="AtgEnumStrings.cpp" />
+    <ClCompile Include="AtgFrame.cpp" />
+    <ClCompile Include="AtgLight.cpp" />
+    <ClCompile Include="AtgMaterials.cpp" />
+    <ClCompile Include="AtgModel.cpp" />
+    <ClCompile Include="AtgNamedTypedObject.cpp" />
+    <ClCompile Include="AtgResource.cpp" />
+    <ClCompile Include="AtgResourceDatabase.cpp" />
+    <ClCompile Include="AtgScene.cpp" />
+    <ClCompile Include="AtgSceneFileParser.cpp" />
+    <ClCompile Include="AtgSceneMesh.cpp" />
+    <ClCompile Include="AtgSimpleShaders.cpp" />
+    <ClCompile Include="AtgUtil.cpp" />
+    <ClCompile Include="AtgXmlParser.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="XTLOnPC.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AtgAnimation.h" />
+    <ClInclude Include="AtgApp.h" />
+    <ClInclude Include="AtgBound.h" />
+    <ClInclude Include="AtgCamera.h" />
+    <ClInclude Include="AtgCollision.h" />
+    <ClInclude Include="AtgDebugDraw.h" />
+    <ClInclude Include="AtgDevice.h" />
+    <ClInclude Include="AtgEnumStrings.h" />
+    <ClInclude Include="AtgFrame.h" />
+    <ClInclude Include="AtgLight.h" />
+    <ClInclude Include="AtgMaterials.h" />
+    <ClInclude Include="AtgModel.h" />
+    <ClInclude Include="AtgNamedTypedObject.h" />
+    <ClInclude Include="AtgResource.h" />
+    <ClInclude Include="AtgResourceDatabase.h" />
+    <ClInclude Include="AtgScene.h" />
+    <ClInclude Include="AtgSceneAll.h" />
+    <ClInclude Include="AtgSceneFileParser.h" />
+    <ClInclude Include="AtgSceneMesh.h" />
+    <ClInclude Include="AtgSimpleShaders.h" />
+    <ClInclude Include="AtgSkeletalAnimation.h" />
+    <ClInclude Include="AtgUtil.h" />
+    <ClInclude Include="AtgXmlParser.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="XTLOnPC.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

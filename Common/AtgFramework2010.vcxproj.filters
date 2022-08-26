@@ -1,0 +1,347 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="XML">
+      <UniqueIdentifier>{7f5ba7b8-bc2d-474a-a7ea-26c8515cc057}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene">
+      <UniqueIdentifier>{ca3dd9a1-0513-4280-af50-f3b7062440f1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Collision">
+      <UniqueIdentifier>{9bb73257-dff5-43ba-a104-063589528afa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rendering">
+      <UniqueIdentifier>{803a5d87-6f9d-4013-9ff5-62ede0051b1b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="File Loading">
+      <UniqueIdentifier>{6e0fe610-2149-4ace-830b-44368a77d42c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sample Framework">
+      <UniqueIdentifier>{03b179ba-2861-4ece-b231-d9765a33d543}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Audio">
+      <UniqueIdentifier>{bf51b448-e49e-4203-8909-55c02fff650d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Misc">
+      <UniqueIdentifier>{34b439cf-5014-4410-95ba-62f24de5393b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Online">
+      <UniqueIdentifier>{677dac40-1476-46fd-a19f-c663bd81e8ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Nui">
+      <UniqueIdentifier>{e45e0408-167a-42d6-b51c-cf9bf278e408}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AtgXmlParser.cpp">
+      <Filter>XML</Filter>
+    </ClCompile>
+    <ClCompile Include="AtgXmlWriter.cpp">
+      <Filter>XML</Filter>
+    </ClCompile>
+    <ClCompile Include="AtgAnimation.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="AtgCamera.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="AtgFrame.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="AtgLight.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="AtgMaterials.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="AtgModel.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="AtgNamedTypedObject.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="AtgResourceDatabase.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="AtgScene.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="AtgSceneMesh.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="AtgSkeletalAnimation.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="AtgBound.cpp">
+      <Filter>Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="AtgCollision.cpp">
+      <Filter>Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="AtgAvatarRenderer.cpp">
+      <Filter>Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="AtgDebugDraw.cpp">
+      <Filter>Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="AtgFont.cpp">
+      <Filter>Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="AtgMesh.cpp">
+      <Filter>Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="AtgPostProcess.cpp">
+      <Filter>Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="AtgSimpleShaders.cpp">
+      <Filter>Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="AtgEnumStrings.cpp">
+      <Filter>File Loading</Filter>
+    </ClCompile>
+    <ClCompile Include="AtgMediaLocator.cpp">
+      <Filter>File Loading</Filter>
+    </ClCompile>
+    <ClCompile Include="AtgResource.cpp">
+      <Filter>File Loading</Filter>
+    </ClCompile>
+    <ClCompile Include="AtgSceneFileParser.cpp">
+      <Filter>File Loading</Filter>
+    </ClCompile>
+    <ClCompile Include="AtgApp.cpp">
+      <Filter>Sample Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="AtgConsole.cpp">
+      <Filter>Sample Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="AtgDevice.cpp">
+      <Filter>Sample Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="AtgHelp.cpp">
+      <Filter>Sample Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="AtgInput.cpp">
+      <Filter>Sample Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="AtgAudio.cpp">
+      <Filter>Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="ATGDsp.cpp">
+      <Filter>Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="ATGSpectralDisplay.cpp">
+      <Filter>Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="AtgWavebank.cpp">
+      <Filter>Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="AtgUtil.cpp">
+      <Filter>Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="AtgXime.cpp">
+      <Filter>Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="AtgHttp.cpp">
+      <Filter>Online</Filter>
+    </ClCompile>
+    <ClCompile Include="AtgJson.cpp">
+      <Filter>Online</Filter>
+    </ClCompile>
+    <ClCompile Include="AtgRest.cpp">
+      <Filter>Online</Filter>
+    </ClCompile>
+    <ClCompile Include="AtgSessionManager.cpp">
+      <Filter>Online</Filter>
+    </ClCompile>
+    <ClCompile Include="AtgSignIn.cpp">
+      <Filter>Online</Filter>
+    </ClCompile>
+    <ClCompile Include="ATGNuiJointFilter.cpp">
+      <Filter>Nui</Filter>
+    </ClCompile>
+    <ClCompile Include="AtgNuiCommon.cpp">
+      <Filter>Nui</Filter>
+    </ClCompile>
+    <ClCompile Include="AtgNuiHandRefinement.cpp">
+      <Filter>Nui</Filter>
+    </ClCompile>
+    <ClCompile Include="AtgNuiJointConverter.cpp">
+      <Filter>Nui</Filter>
+    </ClCompile>
+    <ClCompile Include="AtgNuiVisualization.cpp">
+      <Filter>Nui</Filter>
+    </ClCompile>
+    <ClCompile Include="AtgNuiRelativeCoordinates.cpp">
+      <Filter>Nui</Filter>
+    </ClCompile>
+    <ClCompile Include="AtgNuiMenu.cpp">
+      <Filter>Nui</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AtgAnimation.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+	<ClInclude Include="AtgMaterials.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="AtgSceneMesh.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="AtgSkeletalAnimation.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="AtgAvatarRenderer.h">
+      <Filter>Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="AtgFont.h">
+      <Filter>Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="AtgMesh.h">
+      <Filter>Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="AtgPostProcess.h">
+      <Filter>Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="AtgMediaLocator.h">
+      <Filter>File Loading</Filter>
+    </ClInclude>
+    <ClInclude Include="AtgResource.h">
+      <Filter>File Loading</Filter>
+    </ClInclude>
+    <ClInclude Include="AtgSceneFileParser.h">
+      <Filter>File Loading</Filter>
+    </ClInclude>
+    <ClInclude Include="AtgApp.h">
+      <Filter>Sample Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="AtgConsole.h">
+      <Filter>Sample Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="AtgDevice.h">
+      <Filter>Sample Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="AtgHelp.h">
+      <Filter>Sample Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="AtgInput.h">
+      <Filter>Sample Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="AtgAudio.h">
+      <Filter>Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="ATGDsp.h">
+      <Filter>Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="ATGSpectralDisplay.h">
+      <Filter>Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="AtgWavebank.h">
+      <Filter>Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="AtgLockFreePipe.h">
+      <Filter>Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="AtgUtil.h">
+      <Filter>Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="AtgXime.h">
+      <Filter>Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="AtgHttp.h">
+      <Filter>Online</Filter>
+    </ClInclude>
+    <ClInclude Include="AtgJson.h">
+      <Filter>Online</Filter>
+    </ClInclude>
+    <ClInclude Include="AtgRest.h">
+      <Filter>Online</Filter>
+    </ClInclude>
+    <ClInclude Include="AtgSessionManager.h">
+      <Filter>Online</Filter>
+    </ClInclude>
+    <ClInclude Include="AtgSignIn.h">
+      <Filter>Online</Filter>
+    </ClInclude>
+    <ClInclude Include="ATGNuiJointFilter.h">
+      <Filter>Nui</Filter>
+    </ClInclude>
+    <ClInclude Include="AtgNuiCommon.h">
+      <Filter>Nui</Filter>
+    </ClInclude>
+    <ClInclude Include="AtgNuiHandRefinement.h">
+      <Filter>Nui</Filter>
+    </ClInclude>
+    <ClInclude Include="AtgNuiJointConverter.h">
+      <Filter>Nui</Filter>
+    </ClInclude>
+    <ClInclude Include="AtgNuiVisualization.h">
+      <Filter>Nui</Filter>
+    </ClInclude>
+    <ClInclude Include="AtgNuiMenu.h">
+      <Filter>Nui</Filter>
+    </ClInclude>
+    <ClInclude Include="AtgXmlParser.h">
+      <Filter>XML</Filter>
+    </ClInclude>
+    <ClInclude Include="AtgXmlWriter.h">
+      <Filter>XML</Filter>
+    </ClInclude>
+    <ClInclude Include="AtgCamera.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="AtgFrame.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="AtgLight.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="AtgModel.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="AtgNamedTypedObject.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="AtgResourceDatabase.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="AtgScene.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="AtgSceneAll.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="AtgBound.h">
+      <Filter>Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="AtgCollision.h">
+      <Filter>Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="AtgDebugDraw.h">
+      <Filter>Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="AtgSimpleShaders.h">
+      <Filter>Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="AtgEnumStrings.h">
+      <Filter>File Loading</Filter>
+    </ClInclude>
+    <ClInclude Include="AtgNuiRelativeCoordinates.h">
+      <Filter>Nui</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
